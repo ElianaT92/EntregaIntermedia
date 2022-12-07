@@ -1,0 +1,18 @@
+{% extends 'AppCoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>BUSCA TU CURSO </h1>
+<p>Ingresa el numero de comision</p>
+
+
+<form action="/AppCoder/buscar/" method="get">{% csrf_token %}
+	
+	<input type="number", name="camada", id="camada">
+    <input type="submit",value="Buscar">
+</form>
+
+
+{% endblock %}

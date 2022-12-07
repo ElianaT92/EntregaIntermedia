@@ -1,0 +1,16 @@
+{% extends 'AppCoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+Asignatura: {{asignatura}}
+<br>
+Profesores: 
+{%for profesor in profesores%}
+    {{profesor.nombre}}
+    </br>
+{%endfor%}
+
+{% endblock %}
